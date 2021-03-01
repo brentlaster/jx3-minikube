@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         brentlaster/jx3-minikube: true
+        brentlaster/node-proj33: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         brentlaster/jx3-minikube: merge
+        brentlaster/node-proj33: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - brentlaster/jx3-minikube
+        - brentlaster/node-proj33
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - brentlaster/jx3-minikube
+        - brentlaster/node-proj33
       target_url: http://dashboard-jx.10.0.2.15.nip.io
 kind: ConfigMap
 metadata:
